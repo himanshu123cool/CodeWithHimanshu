@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar{
@@ -20,7 +21,7 @@
     --light-color:rgb(255, 255, 255);
     --dark-color: #000;
     --orange-color:#FF9A03;
-    --tint-color:#fafafa;
+    --tint-color:#dddddd;
     --green-color:rgb(202, 252, 137);
 }
 
@@ -88,6 +89,7 @@ h1,h2,h3,h4,h5,h6{
     top: 0;
     width: 100%;
     z-index: 9999;
+    box-shadow: 0 1px 4px grey;
 }
 
 .logo{
@@ -244,6 +246,210 @@ nav{
 
  /* ----------------home-section-end----------------------
 --------------------------------------------------------  */
+
+
+
+
+
+
+/* ------------about-section-start--------------------
+--------------------------------------------------- */
+
+#about{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 4rem 4rem;
+}
+
+.about-heading-box{
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-heading{
+    font-size: 4rem;
+}
+
+.about-heading>span{
+    color: var(--red-color);
+}
+
+.about-heading-2{
+    color: var(--red-color);
+    position: relative;
+}
+
+.about-heading-2::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    border: 2px solid var(--red-hover-color);
+    color: var(--red-hover-color);
+    top: 49%;
+    left: -70%;
+}
+
+.about-heading-2::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    border: 2px solid var(--red-hover-color);
+    color: var(--red-hover-color);
+    top: 49%;
+    right: -70%;
+}
+
+.left-about{
+    padding: 2rem;
+    text-align: justify;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-about-heading{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.left-about-heading>span{
+    color: var(--red-color);
+}
+
+.btn-box{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------about-section-end--------------------
+--------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -493,7 +699,7 @@ nav{
     }
 
     #home{
-        height:80vh;
+        height:30vh;
         clip-path:polygon(100% 0, 100% 100%, 75% 90%, 0 100%, 0 0);
     }
 
@@ -590,7 +796,7 @@ nav{
     }
 
     #home{
-        height:80vh;
+        height:30vh;
         clip-path:polygon(100% 0, 100% 100%, 75% 90%, 0 100%, 0 0);
     }
 

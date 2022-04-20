@@ -12,6 +12,8 @@ var type = new Typed('.type',{
 
 
 
+
+
  
 // hamburger-navbar 
 $(document).ready(function(){
