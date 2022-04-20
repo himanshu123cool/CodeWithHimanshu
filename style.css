@@ -66,6 +66,7 @@ h1,h2,h3,h4,h5,h6{
     cursor: pointer;
     transition: all 0.4s;
     letter-spacing: 1px;
+    margin-right: 1.2rem;
 }
 
 .btn>a{
@@ -194,7 +195,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(2px);
 }
 
 .hero-content{
@@ -223,7 +223,7 @@ nav{
 
 .hero-para{
     color: var(--light-color);
-    margin-top: 5rem;
+    margin: 5rem 0;
 }
 
 .social-link-box{
@@ -320,17 +320,30 @@ nav{
     color: var(--red-color);
 }
 
-.btn-box{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .about-img{
     width: 100%;
     height: 100%;
 }
+
+.about-social-link-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12vw;
+}
+
+.about-social-link{
+    color: var(--dark-color);
+    font-size: 3rem;
+    transition: transform 0.8s;
+}
+
+.about-social-link:hover{
+    color: var(--orange-color);
+    transform: rotate(360deg);
+}
+
+
 
 /* ------------about-section-end--------------------
 --------------------------------------------------- */
@@ -507,6 +520,22 @@ nav{
         flex-basis: 70%;
     }
 
+    .container{
+        padding:4rem 7rem;
+    }
+
+    #about{
+        display: grid;
+        gap: 2rem;
+    }
+
+    .left-about{
+        padding: 1rem 0;
+    }
+
+    .left-about-para{
+        font-size: 1.5rem;
+    }
 }
 
 /* laptop  */
@@ -517,7 +546,7 @@ nav{
     }
 
     .container{
-        padding: 5rem 10rem;
+        padding: 5rem 4rem;
     }
 
     nav{
@@ -527,6 +556,32 @@ nav{
     .social-link-box{
         width: 15vw;
     }
+    #about{
+        display: grid;
+        gap: 1rem;
+    }
+
+    .about-heading{
+        font-size: 3rem;
+    }
+
+    .about-heading-2{
+        font-size: 1.5rem;
+    }
+
+    .left-about{
+        padding: 0;
+    }
+
+    .left-about-para{
+        font-size: 1.4rem;
+    }
+
+
+    .about-social-link-box{
+        width: 20vw;
+    }
+
 }
 
 
@@ -538,7 +593,7 @@ nav{
     }
 
     .container{
-        padding: 3rem 7rem;
+        padding: 2rem 3rem;
     }
 
     #navbar{
@@ -554,7 +609,7 @@ nav{
     }
 
     #home{
-        height: 60vh;
+        height: 55vh;
     }
 
     #hamburger{
@@ -611,7 +666,7 @@ nav{
     }
     
     .hero-para{
-        margin-top: 3rem;
+        margin: 1rem 0;
         font-size: 1.3rem;
     }
     
@@ -621,6 +676,45 @@ nav{
 
     .social-link-box{
         width: 15vw;
+    }
+
+
+
+    #about{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about-heading-box{
+        grid-column: 1/2;
+        order: 0;
+    }
+
+    .about-heading{
+        font-size: 3rem;
+    }
+
+    .about-heading-2{
+        font-size: 1.5rem;
+    }
+
+    .left-about{
+        padding: 0;
+        order: 2;
+    }
+
+    .left-about-para{
+        font-size: 2rem;
+    }
+
+
+    .about-social-link-box{
+        width: 25vw;
+    }
+
+    .right-about{
+        order: 1;
     }
 }
 
@@ -709,7 +803,7 @@ nav{
     }
     
     .hero-para{
-        margin-top: 1rem;
+        margin: 1rem 0;
         font-size: 1.1rem;
     }
     
@@ -719,6 +813,53 @@ nav{
 
     .social-link-box{
         width: 25vw;
+    }
+
+
+
+    #about{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about-heading-box{
+        grid-column: 1/2;
+        order: 0;
+    }
+
+    .about-heading{
+        font-size: 2rem;
+    }
+
+    .about-heading-2{
+        font-size: 1rem;
+    }
+
+    .about-heading-2::after,.about-heading-2::before{
+        width: 25px;
+    }
+
+    .left-about{
+        padding: 0;
+        order: 2;
+    }
+
+    .left-about-heading{
+        font-size: 2rem;
+    }
+
+    .left-about-para{
+        font-size: 1.5rem;
+    }
+
+
+    .about-social-link-box{
+        width: 40vw;
+    }
+
+    .right-about{
+        order: 1;
     }
 }
 
@@ -782,14 +923,14 @@ nav{
     }
 
     #cvbtn, #hirebtn{
-        margin: 2rem 0;
+        margin: 1rem 0;
         padding: 1rem;
         font-size: 1.2rem;
     }
 
     #home{
         clip-path:polygon(100% 0, 100% 100%, 75% 90%, 0 100%, 0 0);
-        height: 55vh;
+        height: 60vh;
     }
 
 
@@ -806,7 +947,7 @@ nav{
     }
     
     .hero-para{
-        margin-top: 1rem;
+        margin: 0.5rem 0;
         font-size: 1.1rem;
     }
 
@@ -816,6 +957,53 @@ nav{
 
     .social-link-box{
         width: 30vw;
+    }
+
+
+
+    #about{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .about-heading-box{
+        grid-column: 1/2;
+        order: 0;
+    }
+
+    .about-heading{
+        font-size: 2rem;
+    }
+
+    .about-heading-2{
+        font-size: 1rem;
+    }
+
+    .about-heading-2::after,.about-heading-2::before{
+        width: 25px;
+    }
+
+    .left-about{
+        padding: 0;
+        order: 2;
+    }
+
+    .left-about-heading{
+        font-size: 1.6rem;
+    }
+
+    .left-about-para{
+        font-size: 1.2rem;
+    }
+
+
+    .about-social-link-box{
+        width: 50vw;
+    }
+
+    .right-about{
+        order: 1;
     }
 }
 /* media-queries-end */
