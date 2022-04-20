@@ -173,14 +173,14 @@ nav{
 --------------------------------------------------------  */
 
 #home{
-    background-image: url('./media/pexels-photo-5475750.jpeg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    background-attachment: fixed;
-    height: 120vh;
+    width: 100vw;
     position: relative;
     clip-path:polygon(100% 0, 100% 100%, 75% 85%, 0 100%, 0 0);
+}
+
+.hero-img{
+    width: 100%;
+    height: 100%;
 }
 
 .home-overlay{
@@ -507,9 +507,6 @@ nav{
         flex-basis: 70%;
     }
 
-    #home{
-        height: 100vh;
-    }
 }
 
 /* laptop  */
@@ -520,15 +517,11 @@ nav{
     }
 
     .container{
-        padding: 3rem 10rem;
+        padding: 5rem 10rem;
     }
 
     nav{
         flex-basis: 80%;
-    }
-
-    #home{
-        height: 80vh;
     }
 
     .social-link-box{
@@ -545,7 +538,7 @@ nav{
     }
 
     .container{
-        padding: 3rem 10rem;
+        padding: 3rem 7rem;
     }
 
     #navbar{
@@ -558,6 +551,10 @@ nav{
 
     #header{
         position: relative;
+    }
+
+    #home{
+        height: 60vh;
     }
 
     #hamburger{
@@ -600,11 +597,6 @@ nav{
         padding: 1rem;
         font-size: 1.2rem;
     }
-
-    #home{
-        height:80vh;
-    }
-
 
     .hero-heading-1, .hero-heading-3{
         font-size: 1.6rem;
@@ -638,11 +630,11 @@ nav{
 @media (min-width:320px) and (max-width: 480px){
 
     .container-fluid{
-        padding: 1.5rem 3rem;
+        padding: 1.5rem 1rem;
     }
 
     .container{
-        padding: 1.5rem 6rem;
+        padding: 0rem 1rem;
     }
 
     #navbar{
@@ -699,26 +691,26 @@ nav{
     }
 
     #home{
-        height:30vh;
         clip-path:polygon(100% 0, 100% 100%, 75% 90%, 0 100%, 0 0);
+        height: 50vh;
     }
 
 
     .hero-heading-1, .hero-heading-3{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
     
     .hero-heading-2{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     
     .type{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .hero-para{
-        margin-top: 3rem;
-        font-size: 1.3rem;
+        margin-top: 1rem;
+        font-size: 1.1rem;
     }
     
     .social-link{
@@ -739,7 +731,7 @@ nav{
     }
 
     .container{
-        padding: 1.5rem 6rem;
+        padding: 0rem 1rem;
     }
 
     #navbar{
@@ -796,34 +788,34 @@ nav{
     }
 
     #home{
-        height:30vh;
         clip-path:polygon(100% 0, 100% 100%, 75% 90%, 0 100%, 0 0);
+        height: 55vh;
     }
 
 
     .hero-heading-1, .hero-heading-3{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
     
     .hero-heading-2{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     
     .type{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .hero-para{
-        margin-top: 3rem;
-        font-size: 1.3rem;
+        margin-top: 1rem;
+        font-size: 1.1rem;
     }
-    
+
     .social-link{
         font-size: 2rem;
     }
 
     .social-link-box{
-        width: 25vw;
+        width: 30vw;
     }
 }
 /* media-queries-end */
