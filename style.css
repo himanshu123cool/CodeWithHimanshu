@@ -322,7 +322,7 @@ nav{
     }
 
     #home{
-        height: 90vh;
+        height: 80vh;
     }
 
     .social-link-box{
@@ -494,6 +494,7 @@ nav{
 
     #home{
         height:80vh;
+        clip-path:polygon(100% 0, 100% 100%, 75% 90%, 0 100%, 0 0);
     }
 
 
@@ -519,7 +520,7 @@ nav{
     }
 
     .social-link-box{
-        width: 15vw;
+        width: 18vw;
     }
 }
 
@@ -590,6 +591,7 @@ nav{
 
     #home{
         height:80vh;
+        clip-path:polygon(100% 0, 100% 100%, 75% 90%, 0 100%, 0 0);
     }
 
 
@@ -615,7 +617,7 @@ nav{
     }
 
     .social-link-box{
-        width: 15vw;
+        width: 18vw;
     }
 }
 /* media-queries-end */
