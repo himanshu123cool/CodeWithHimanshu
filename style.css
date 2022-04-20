@@ -558,7 +558,12 @@ nav{
     }
     #about{
         display: grid;
+        grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .about-heading-box{
+        grid-column: 1/2;
     }
 
     .about-heading{
