@@ -26,13 +26,10 @@
 }
 
 html{
-    font-size: 62.5%;
-}
-
-body{
-    max-width: 1500px;
+    font-size: 62.5%;  
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; 
+    max-width: 1500px; 
 }
 
 ul{
@@ -73,8 +70,9 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 600;
     cursor: pointer;
     transition: all 0.4s;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-right: 1.2rem;
+    color: var(--light-color);
 }
 
 .btn>a{
@@ -97,13 +95,12 @@ h1,h2,h3,h4,h5,h6{
     top: 0;
     width: 100%;
     z-index: 9999;
-    box-shadow: 0 1px 4px grey;
-    max-width: 1500px;
+    box-shadow: 0 2px 4px grey;
 }
 
 .logo{
     color: var(--dark-color);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 nav{
@@ -369,6 +366,318 @@ nav{
 
 
 
+/*-------------- skill-section-start--------------- 
+---------------------------------------------------*/
+
+#skill{
+    background-color: var(--tint-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+.skill-heading-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.skill-heading{
+    font-size: 4rem;
+}
+
+.skill-heading-2{
+    color: var(--red-color);
+    position: relative;
+}
+
+.skill-heading-2::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    border: 2px solid var(--red-hover-color);
+    color: var(--red-hover-color);
+    top: 49%;
+    left: -55%;
+}
+
+.skill-heading-2::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    border: 2px solid var(--red-hover-color);
+    color: var(--red-hover-color);
+    top: 49%;
+    right: -55%;
+}
+
+.skill-para-box{
+    text-align: center;
+    position: relative;
+}
+
+.skill-content-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-content{
+    border-radius: 23px;
+    width: 80%;
+    padding: 4rem;
+    background-color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.skill-content-heading{
+    text-decoration: underline;
+    font-size: 1.8rem;
+    color: var(--red-color);
+}
+
+.tab-section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-bar{
+    margin: 2.5rem 0;
+}
+
+.tab-list{
+    padding: 2rem;
+    width: 90%;
+    height: 100%;
+}
+
+.progress{
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.progress-bar{
+    margin: 1rem 0;
+}
+
+.progress-bar>h5{
+    font-size: 1.5rem;
+}
+
+.rating{
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+/* progress-1  */
+.progress-1{
+    border: 2px solid var(--red-color);
+}
+
+.rating-1{
+    width: 85%;
+    background-color: var(--red-color);
+    position: relative;
+}
+
+.rating-1::after{
+    content: '85%';
+    position: absolute;
+    left: 95%;
+    top: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* progress-2  */
+.progress-2{
+    border: 2px solid yellow;
+}
+
+.rating-2{
+    width: 75%;
+    background-color: yellow;
+    position: relative;
+}
+
+.rating-2::after{
+    content: '75%';
+    position: absolute;
+    left: 95%;
+    top: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* progress-3  */
+.progress-3{
+    border: 2px solid greenyellow;
+}
+
+.rating-3{
+    width: 50%;
+    background-color: greenyellow;
+    position: relative;
+}
+
+.rating-3::after{
+    content: '50%';
+    position: absolute;
+    left: 95%;
+    top: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* progress-4  */
+.progress-4{
+    border: 2px solid blue;
+}
+
+.rating-4{
+    width: 55%;
+    background-color: blue;
+    position: relative;
+}
+
+.rating-4::after{
+    content: '55%';
+    position: absolute;
+    left: 95%;
+    top: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* progress-5  */
+.progress-5{
+    border: 2px solid violet;
+}
+
+.rating-5{
+    width: 70%;
+    background-color: violet;
+    position: relative;
+}
+
+.rating-5::after{
+    content: '70%';
+    position: absolute;
+    left: 95%;
+    top: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* progress-6  */
+.progress-6{
+    border: 2px solid cyan;
+}
+
+.rating-6{
+    width: 40%;
+    background-color: cyan;
+    position: relative;
+}
+
+.rating-6::after{
+    content: '40%';
+    position: absolute;
+    left: 95%;
+    top: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* progress-7  */
+.progress-7{
+    border: 2px solid coral;
+}
+
+.rating-7{
+    width: 75%;
+    background-color: coral;
+    position: relative;
+}
+
+.rating-7::after{
+    content: '75%';
+    position: absolute;
+    left: 95%;
+    top: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+.education-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    height: 100%;
+}
+
+.education-box:hover .education-heading-2, .education-box:hover{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.education-box{
+    box-shadow: 3px 3px 3px var(--tint-color);
+    text-align: center;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.education-box-icon{
+    color: var(--orange-color);
+    font-size: 4rem;
+    margin-bottom: 0.8rem;
+}
+
+.education-heading-1{
+    font-size: 2.5rem;
+    color: var(--red-color);
+    margin-bottom: 0.8rem;
+}
+
+.education-para{
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.education-heading-2{
+    font-size: 1.8rem;
+    color: var(--dark-color);
+}
+
+
+/*-------------- skill-section-end----------------- 
+---------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -546,7 +855,7 @@ nav{
 
 /* media-queries-start  */
 
-@media (min-width:991px) and (max-width:1200px){
+@media (min-width:992px) and (max-width:1200px){
 
     .container-fluid{
         padding: 30px 70px;
@@ -563,10 +872,29 @@ nav{
     #about{
         gap: 1rem;
     }
+
+    .skill-para{
+        font-size: 1.6rem;
+    }
+
+    .skill-content{
+        width: 90%;
+    }
+
+    .tab-list{
+        width: 100%;
+    }
+    .education-content{
+        width: 100%;
+    }
+
+    .tab-bar{
+        margin: 4rem 0;
+    }
 }
 
 
-@media (min-width:800px) and (max-width:990px){
+@media (min-width:800px) and (max-width:991px){
 
     .container-fluid{
         padding: 20px 30px;
@@ -599,6 +927,26 @@ nav{
     .about-img{
         width: 90%;
         height: 75%;
+    }
+
+    .skill-para{
+        font-size: 1.6rem;
+    }
+
+    .skill-content{
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+
+    .tab-list{
+        width: 100%;
+    }
+    .education-content{
+        width: 100%;
+    }
+
+    .tab-bar{
+        margin: 4rem 0;
     }
 }
 
@@ -691,8 +1039,35 @@ nav{
         height: 70%;
         width: 70%;
     }
-}
 
+    #skill{
+        gap:2rem;
+    }
+
+    .skill-para{
+        font-size: 1.5rem;
+    }
+
+    .skill-content{
+        width: 90%;
+        padding:1rem;
+    }
+
+    .tab-list{
+        width: 100%;
+        padding:1rem;
+    }
+    .education-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .tab-bar{
+        margin: 4rem 0;
+    }
+}
 
 
 @media (min-width:480px) and (max-width:599px){
@@ -781,12 +1156,59 @@ nav{
     }
 
     .about-img{
-        height: 70%;
         width: 70%;
     }
 
     .about-heading{
         font-size: 3.5rem;
+    }
+
+    .left-about-para{
+        font-size: 1.5rem;
+    }
+
+    #skill{
+        gap:2rem;
+    }
+
+    .skill-heading{
+        font-size: 3.5rem;
+    }
+
+    .skill-para{
+        font-size: 1.5rem;
+    }
+
+    .skill-content{
+        width: 90%;
+        padding:1rem;
+    }
+
+    .tab-list{
+        width: 100%;
+        padding:1rem;
+    }
+    .education-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .education-box{
+        padding: 1rem;
+    }
+
+    .education-heading-1{
+        font-size: 2rem;
+    }
+
+    .progress-bar{
+        margin: 2rem 0;
+    }
+
+    .tab-bar{
+        margin: 3rem 0;
     }
 }
 
@@ -798,7 +1220,7 @@ nav{
     }
 
     .container{
-        padding: 60px 5px 10px 5px;
+        padding: 60px 10px 10px 10px;
     }
 
     #navbar{
@@ -874,8 +1296,8 @@ nav{
         margin: 3rem 0;
     }
 
-    .social-link{
-        margin: 0 0.6rem;
+    .social-link>a{
+        margin: 0 0.3rem;
     }
 
     #about{
@@ -916,18 +1338,107 @@ nav{
 
     .left-about-heading{
         font-size: 1.9rem;
+        letter-spacing: 0.2px;
     }
 
     .left-about-para{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    .btn{
+        padding: 0.8rem 1rem;
+        font-size: 1.2rem;
     }
   
     .hirebtn{
-        margin-right: 0.2rem;
+        margin-right: 0.1rem;
     }
 
-    .about-social-link{
-        margin: 0 0.5rem;
+    .about-social-link>a{
+        margin: 0 0.3rem;
+    }
+
+    #skill{
+        gap:2rem;
+    }
+
+    .skill-heading{
+        font-size: 2.5rem;
+    }
+
+    .skill-heading-2{
+        font-size: 1.3rem;
+    }
+
+    .skill-heading-2::after, .skill-heading-2::before{
+        width: 30px;
+    }
+
+    .skill-para{
+        font-size: 1.4rem;
+    }
+
+    .skill-content{
+        width: 100%;
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .skill-content-heading{
+        font-size: 1.5rem;
+    }
+
+    .tab-list{
+        width: 100%;
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    .education-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .education-box{
+        padding: 0.5rem;
+    }
+
+    .education-heading-1{
+        font-size: 1.5rem;
+    }
+
+    .education-box-icon{
+        font-size: 3.5rem;
+    }
+
+    .education-heading-2{
+        font-size: 1.3rem;
+    }
+
+    .education-para{
+        font-size: 1.2rem;
+    }
+
+    .progress-bar{
+        margin-bottom: 0.5rem;
+        text-align: start;
+    }
+
+    .progress-bar>h5{
+        font-size: 1.3rem;
+    }
+
+    .progress{
+        height: 10px;
+    }
+
+    .rating::after{
+        font-size: 1.3rem;
+    }
+
+    .tab-bar{
+        margin: 2rem 0;
     }
 }
 
