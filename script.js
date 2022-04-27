@@ -21,13 +21,13 @@ $(document).ready(function(){
   $('.close').hide();
 
   $('.open').click(function(){
-    $('#hamburger').slideDown('slow');
+    $('#hamburger').slideDown(500);
     $('.close').show();
     $('.open').hide();
   })
 
   $('.close').click(function(){
-    $('#hamburger').slideUp('slow');
+    $('#hamburger').slideUp(500);
    $('.open').show();
    $('.close').hide();
   })
@@ -83,6 +83,7 @@ window.addEventListener('scroll' , ()=>{
 
 
 
+// skill-section-script 
 $(document).ready(function(){
   $('.education-content').hide()
 
@@ -97,6 +98,6 @@ $(document).ready(function(){
     $('.education-content').hide()   
     $('.tab-list').show() 
     $('#skillbtn').css('backgroundColor', 'var(--red-hover-color)')
-     $('#educationbtn').css('backgroundColor', 'var(--red-hover-color)')
+     $('#educationbtn').css('backgroundColor', '')
   })
 })

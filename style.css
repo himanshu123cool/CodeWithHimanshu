@@ -682,6 +682,148 @@ nav{
 
 
 
+/* ----------------portfolio-section-start------------------------
+---------------------------------------------------------------  */
+
+#portfolio{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+}
+
+.portfolio-heading-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio-heading{
+    font-size: 4rem;
+}
+
+.portfolio-heading>span{
+    color: var(--red-color);
+}
+
+.portfolio-heading-2{
+    color: var(--red-color);
+    position: relative;
+}
+
+.portfolio-heading-2::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    border: 2px solid var(--red-hover-color);
+    color: var(--red-hover-color);
+    top: 49%;
+    left: -70%;
+}
+
+.portfolio-heading-2::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    border: 2px solid var(--red-hover-color);
+    color: var(--red-hover-color);
+    top: 49%;
+    right: -70%;
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.portfolio-box{
+    border: 5px solid var(--orange-color);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio-img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.portfolio-overlay-box{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portfolio-overlay-heading{
+    color: var(--orange-color);
+    font-size: 2rem;
+}
+
+.portfolio-overlay-para{
+    color: var(--light-color);
+    font-size: 1.4rem;
+}
+
+.portfolio-box:hover .portfolio-img{
+    transform: scale(1.2);
+}
+
+.portfolio-box:hover .portfolio-overlay-box{
+    transform: translateY(-100%);
+}
+
+/* ----------------portfolio-section-end------------------------
+---------------------------------------------------------------  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -948,6 +1090,12 @@ nav{
     .tab-bar{
         margin: 4rem 0;
     }
+
+    .portfolio-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
 
 
@@ -1066,6 +1214,16 @@ nav{
 
     .tab-bar{
         margin: 4rem 0;
+    }
+
+    #portfolio{
+        display: grid;
+        gap: 4rem;
+    }
+
+    .portfolio-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
@@ -1209,6 +1367,20 @@ nav{
 
     .tab-bar{
         margin: 3rem 0;
+    }
+
+    #portfolio{
+        display: grid;
+        gap: 3rem;
+    }
+
+    .portfolio-heading{
+        font-size: 3.5rem;
+    }
+
+    .portfolio-content{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1440,6 +1612,37 @@ nav{
     .tab-bar{
         margin: 2rem 0;
     }
+
+    #portfolio{
+        display: grid;
+        gap: 3rem;
+    }
+
+    .portfolio-heading{
+        font-size: 2.5rem;
+    }
+
+    .portfolio-heading-2{
+        font-size: 1.3rem;
+    }
+
+    .portfolio-heading-2::before,.portfolio-heading-2::after{
+        width: 30px;
+    }
+
+    .portfolio-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* .portfolio-overlay-heading{
+        font-size: 1.5rem;
+    }
+
+    .portfolio-overlay-para{
+        font-size: 1.2rem;
+    } */
 }
 
 /* media-queries-end  */
