@@ -72,6 +72,7 @@ h1,h2,h3,h4,h5,h6{
     transition: all 0.4s;
     letter-spacing: 2px;
     color: var(--light-color);
+    margin-right: 1rem;
 }
 
 .btn>a{
@@ -191,6 +192,10 @@ nav{
     width: 100%;
     height: 100%;
     max-width: 1500px;
+}
+
+.hero-img-2{
+    display: none;
 }
 
 .home-overlay{
@@ -328,11 +333,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5rem;
 }
 
 .about-img{
-    width: 80%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
 }
 
 .about-social-link{
@@ -484,13 +490,13 @@ nav{
 }
 
 /* progress-1  */
-.progress-1{
-    border: 2px solid var(--red-color);
+.progress-1, .progress-2, .progress-3, .progress-4, .progress-5, .progress-6, .progress-7{
+    border:2px solid var(--orange-color);
 }
 
 .rating-1{
     width: 85%;
-    background-color: var(--red-color);
+    background-color: var(--orange-color);
     position: relative;
 }
 
@@ -503,14 +509,9 @@ nav{
     font-weight: 600;
 }
 
-/* progress-2  */
-.progress-2{
-    border: 2px solid yellow;
-}
-
 .rating-2{
     width: 75%;
-    background-color: yellow;
+    background-color: var(--orange-color);
     position: relative;
 }
 
@@ -523,14 +524,9 @@ nav{
     font-weight: 600;
 }
 
-/* progress-3  */
-.progress-3{
-    border: 2px solid greenyellow;
-}
-
 .rating-3{
     width: 50%;
-    background-color: greenyellow;
+    background-color: var(--orange-color);
     position: relative;
 }
 
@@ -543,14 +539,9 @@ nav{
     font-weight: 600;
 }
 
-/* progress-4  */
-.progress-4{
-    border: 2px solid blue;
-}
-
 .rating-4{
     width: 55%;
-    background-color: blue;
+    background-color: var(--orange-color);
     position: relative;
 }
 
@@ -563,14 +554,9 @@ nav{
     font-weight: 600;
 }
 
-/* progress-5  */
-.progress-5{
-    border: 2px solid violet;
-}
-
 .rating-5{
     width: 70%;
-    background-color: violet;
+    background-color: var(--orange-color);
     position: relative;
 }
 
@@ -583,14 +569,9 @@ nav{
     font-weight: 600;
 }
 
-/* progress-6  */
-.progress-6{
-    border: 2px solid cyan;
-}
-
 .rating-6{
     width: 45%;
-    background-color: cyan;
+    background-color: var(--orange-color);
     position: relative;
 }
 
@@ -603,14 +584,9 @@ nav{
     font-weight: 600;
 }
 
-/* progress-7  */
-.progress-7{
-    border: 2px solid coral;
-}
-
 .rating-7{
     width: 60%;
-    background-color: coral;
+    background-color: var(--orange-color);
     position: relative;
 }
 
@@ -1187,6 +1163,10 @@ nav{
         gap: 1rem;
     }
 
+    .right-about{
+        padding: 7rem 1rem;
+    }
+
     .skill-para{
         font-size: 1.6rem;
     }
@@ -1247,9 +1227,8 @@ nav{
         margin: 0 0.6rem;
     }
 
-    .about-img{
-        width: 90%;
-        height: 75%;
+    .right-about{
+        padding: 5rem 2rem;
     }
 
     .skill-para{
@@ -1362,6 +1341,7 @@ nav{
     #about{
         display: grid;
         grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .about-heading-box{
@@ -1379,8 +1359,7 @@ nav{
     }
 
     .about-img{
-        height: 70%;
-        width: 70%;
+        width: 80%;
     }
 
     #skill{
@@ -1503,9 +1482,20 @@ nav{
         clip-path:polygon(100% 0, 100% 100%, 70% 90%, 0 100%, 0 0);
     }
 
+    .hero-img{
+        display: none;
+    }
+
+    .hero-img-2{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
     #about{
         display: grid;
         grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .about-heading-box{
@@ -1520,11 +1510,7 @@ nav{
 
     .right-about{
         order: 1;
-    }
-
-    .about-img{
-        width: 70%;
-    }
+        }
 
     .about-heading{
         font-size: 3.5rem;
@@ -1682,6 +1668,16 @@ nav{
         clip-path:polygon(100% 0, 100% 100%, 70% 95%, 0 100%, 0 0);
     }
 
+    .hero-img{
+        display: none;
+    }
+
+    .hero-img-2{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
     .hero-heading-1, .hero-heading-3{
         font-size: 1.7rem;
     }
@@ -1706,6 +1702,7 @@ nav{
     #about{
         display: grid;
         grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
 
     .about-heading-box{
@@ -1720,11 +1717,7 @@ nav{
 
     .right-about{
         order: 1;
-    }
-
-    .about-img{
-        height: 70%;
-        width: 70%;
+        padding: 3rem 2rem;
     }
 
     .about-heading{
