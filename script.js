@@ -101,3 +101,36 @@ $(document).ready(function(){
      $('#educationbtn').css('backgroundColor', '')
   })
 })
+
+
+
+
+
+
+// module script 
+$(document).ready(function(){
+  var _portfolioBox = $('.portfolio-box');
+  $('.module').hide();
+
+  // module-open 
+  $(_portfolioBox).click(function(){
+    $('.module').show('slow');
+      var weblink = $(this).children('.portfolio-overlay-box').children('a').attr('href')
+      $('#iframe-box').attr('src', weblink); 
+      console.log($('.module-fullscreen-btn').parent('a').attr('href', weblink));
+   })
+
+   // module-close 
+  $('.module-close-btn').click(function(){
+    $('.module').hide('slow');
+    $('#iframe-box').attr('src', ''); 
+  })
+ 
+})
+
+
+
+
+
+
+

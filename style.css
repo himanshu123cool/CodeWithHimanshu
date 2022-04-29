@@ -14,6 +14,10 @@
     display: none;
 }
 
+body{
+    position: relative;
+}
+
 /* variables  */
 :root{
     --red-color: #e60000;
@@ -762,6 +766,49 @@ nav{
     transform: translateY(-100%);
 }
 
+.module{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.module-close-btn{
+    position: absolute;
+    right:0;
+    color: var(--light-color);
+    top: -50px;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.module-fullscreen-btn{
+   position: absolute;
+   top: -50px;
+   font-size: 3.5rem;
+   color: var(--light-color);
+   left: 0;
+   cursor: pointer;
+}
+
+.module-box{
+    position: fixed;
+    top: 90px;
+    width: 80%;
+    height: 80%;
+}
+
+.module-box>iframe{
+    width: 100%;
+    height: 100%;
+}
+
 /* ----------------portfolio-section-end------------------------
 ---------------------------------------------------------------  */
 
@@ -1189,6 +1236,8 @@ nav{
     #contact{
         gap: 3rem 1rem;
     }
+
+
 }
 
 
@@ -1265,6 +1314,9 @@ nav{
         grid-column: 1/2;
     }
 
+    .module-close-btn, .module-fullscreen-btn{
+        font-size: 3rem;
+    }
 }
 
 
@@ -1407,6 +1459,14 @@ nav{
 
     .contact-heading-box{
         grid-column: 1/2;
+    }
+
+    .module-box{
+        width: 85%;
+    }
+
+    .module-close-btn, .module-fullscreen-btn{
+        font-size: 3rem;
     }
 }
 
@@ -1593,6 +1653,14 @@ nav{
 
     .footer-para{
         font-size: 1.2rem;
+    }
+
+    .module-box{
+        width: 90%;
+    }
+
+    .module-close-btn, .module-fullscreen-btn{
+        font-size: 3rem;
     }
 }
 
@@ -1895,6 +1963,14 @@ nav{
 
     .footer-para{
         font-size: 1.2rem;
+    }
+
+    .module-box{
+        width: 95%;
+    }
+
+    .module-close-btn, .module-fullscreen-btn{
+        font-size: 2.5rem;
     }
 }
 
